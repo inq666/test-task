@@ -1,0 +1,36 @@
+@import "./sass/variables";
+
+body {
+  margin: 0 auto;
+
+  font-family: "Open Sans", sans-serif;
+  color: $white;
+  background-color: $main-background-color;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto
+}

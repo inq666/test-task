@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 28px 0;
+
+  .header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header__logo {
+    margin-right: 60px;
+    width: 132px;
+    height: 29px;
+
+    background-image: url("../../images/icons/logo.svg");
+    background-size: cover;
+  }
+}
