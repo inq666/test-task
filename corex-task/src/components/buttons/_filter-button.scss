@@ -1,0 +1,46 @@
+@import "../../sass/variables";
+
+.filter-btn {
+  position: relative;
+  width: 100%;
+  max-width: 212px;
+  height: 30px;
+  margin-bottom: 15px;
+  margin-left: 2px;
+  padding: 0 0 0 9px;
+
+  font-weight: 300;
+  font-size: 12px;
+  font-family: inherit;
+  text-align: left;
+  color: $white;
+
+  background-color: $button-color;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  span {
+    width: 2px;
+    height: 2px;
+    background-color: $white;
+    position: absolute;
+  }
+
+  .left-top-corner {
+   top: 0;
+   left: 0;
+  }
+  .right-top-corner {
+    right: 0;
+    top: 0;
+  }
+  .left-bottom-corner {
+    left: 0;
+    bottom: 0;
+  }
+  .right-bottom-corner {
+    right: 0;
+    bottom: 0;
+  }
+}

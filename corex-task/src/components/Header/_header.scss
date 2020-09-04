@@ -1,19 +1,45 @@
+@import "../../sass/media-query";
+
 .header {
+  @include media-query("md") {
+    padding-top: 20px;
+  }
+  @include media-query("sm") {
+    padding-top: 60px;
+  }
+
   display: flex;
   justify-content: space-between;
-  padding: 26px 28px 0;
+  padding-top: 25px;
 
   .header__container {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
   }
+
   .header__logo {
-    margin-right: 60px;
+    @include media-query("sm") {
+      width: 105.75px;
+      height: 31px;
+
+      background-image: url("../../images/icons/short-logo.svg");
+    }
     width: 132px;
     height: 29px;
 
     background-image: url("../../images/icons/logo.svg");
+    background-size: cover;
+  }
+
+  .filter-menu {
+    @include media-query("sm") {
+      display: block;
+    }
+    margin-top: -1px;
+    display: none;
+    width: 33px;
+    height: 34px;
+
+    background-image: url("../../images/icons/filter-menu.svg");
     background-size: cover;
   }
 }

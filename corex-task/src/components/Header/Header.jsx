@@ -6,12 +6,12 @@ import { ShoppingBasket } from './ShoppingBasket/ShoppingBasket';
 export const Header = () => {
   return (
     <header className="header">
+      <span className="filter-menu" />
       <div className="header__container">
         <div className="header__logo" />
         <ChangeLanguage />
       </div>
       <ShoppingBasket />
-
     </header>
   )
 }

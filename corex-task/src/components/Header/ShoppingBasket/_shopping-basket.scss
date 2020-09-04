@@ -1,6 +1,23 @@
+@import "../../../sass/media-query";
+
 .shopping-basket {
+  @include media-query("md") {
+    margin-top: 4px;
+    margin-right: 2px;
+  }
+  @include media-query("sm") {
+    margin-top: 0;
+    margin-right: 3.5px;
+    width: 36.5px;
+    height: 31.5px;
+  }
+
+  width: 23px;
+  height: 20.5px;
+  margin-top: 3px;
+  margin-right: 4px;
+
   background-image: url("../../../images/icons/basket.svg");
   background-size: cover;
-  width: 20px;
-  height: 20px;
+  cursor: pointer;
 }

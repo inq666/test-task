@@ -1,13 +1,16 @@
-import React from './node_modules/react';
-import './node_modules/_/filter.scss';
+import React from 'react';
+import './_filter.scss';
+import { FilterButton } from '../buttons/FilterButton';
 
 export const Filter = () => {
+  const filterButtons = ['By Manufacturer', 'Minimum price', 'Maximum price']
+  const buttons = filterButtons.map(button => (
+    <FilterButton name={button} />
+  ))
   return (
-    <React.Fragment>
-      <h1>SORT BY</h1>
-      <button>By Manufacturer</button>
-      <button>Minimum price</button>
-      <button>Maximum price</button>
-    </React.Fragment>
+      <div className="filter">
+        <h1>SORT BY</h1>
+        {buttons}
+      </div>
   )
 }
