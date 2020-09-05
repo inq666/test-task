@@ -1,5 +1,6 @@
 @import "../../sass/variables";
 @import "../../sass/media-query";
+@import "../../sass/mixins";
 
 .filter {
   @include media-query("sm") {
@@ -8,13 +9,7 @@
 
   display: flex;
   flex-direction: column;
-  margin-top: 104px;
-  h1 {
-    margin-bottom: 14px;
-
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 48px;
-    font-family: "Exo", sans-serif;
+  h2 {
+    @include title;
   }
 }

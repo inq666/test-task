@@ -7,10 +7,13 @@
   @include media-query("sm") {
     padding-top: 60px;
   }
+  @include media-query("xs") {
+    padding: 29px 12px 0 20px;
+  }
 
   display: flex;
   justify-content: space-between;
-  padding-top: 25px;
+  padding-top: 26px;
 
   .header__container {
     display: flex;
@@ -23,6 +26,11 @@
 
       background-image: url("../../images/icons/short-logo.svg");
     }
+    @include media-query("xs") {
+      width: 64px;
+      height: 19px;
+    }
+
     width: 132px;
     height: 29px;
 
@@ -34,10 +42,15 @@
     @include media-query("sm") {
       display: block;
     }
-    margin-top: -1px;
+    @include media-query("xs") {
+      width: 21px;
+      height: 22px;
+    }
+
     display: none;
     width: 33px;
     height: 34px;
+    margin-top: -1px;
 
     background-image: url("../../images/icons/filter-menu.svg");
     background-size: cover;

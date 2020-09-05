@@ -1,0 +1,67 @@
+@import "../../sass/mixins";
+@import "../../sass/variables";
+
+.news {
+  font-family: "Exo", sans-serif;
+  h2 {
+    @include title;
+  }
+
+  .news__banner {
+    position: relative;
+    padding-top: 46px;
+    text-align: center;
+    width: 209px;
+    height: 699px;
+    background-color: $transparent-white;
+
+    .banner__title-img {
+      margin: 0 auto 7px;
+      width: 50px;
+      height: 50px;
+      background-image: url("../../images/icons/banner-title.svg");
+      background-size: cover;
+    }
+
+    .banner__title {
+      margin-bottom: 52px;
+      font-size: 25px;
+      span {
+        font-weight: 300;
+      }
+    }
+    .banner__tagline {
+      text-transform: uppercase;
+      font-size: 23px;
+      margin-bottom: 35px;
+    }
+    .banner__description {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 300;
+      font-size: 12.5px;
+      margin-bottom: 55px;
+      span {
+        display: block;
+        margin-bottom: 12.5px;
+      }
+    }
+    .banner__img {
+      margin: 0 auto;
+      width: 150px;
+      height: 167px;
+      background-image: url("../../images/icons/banner-img.svg");
+      background-size: cover;
+    }
+
+    .banner__control {
+      position: absolute;
+      bottom: 20px;
+      right: 15px;
+
+      width: 20px;
+      height: 20px;
+
+      background-image: url("../../images/icons/banner-control.svg");
+    }
+  }
+}

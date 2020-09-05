@@ -9,7 +9,7 @@ export const Filter = () => {
   ))
   return (
       <div className="filter">
-        <h1>SORT BY</h1>
+        <h2>SORT BY</h2>
         {buttons}
       </div>
   )
