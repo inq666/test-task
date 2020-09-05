@@ -1,17 +1,17 @@
 @import "../../../sass/media-query";
 
 .shopping-basket {
-  @include media-query("md") {
+  @include media-query("lg") {
     margin-top: 4px;
     margin-right: 2px;
   }
-  @include media-query("sm") {
+  @include media-query("md") {
     margin-top: 0;
     margin-right: 3.5px;
     width: 36.5px;
     height: 31.5px;
   }
-  @include media-query("xs") {
+  @include media-query("sm") {
     width: 23px;
     height: 20.5px;
     margin-right: 0;

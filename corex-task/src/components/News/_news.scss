@@ -3,7 +3,7 @@
 @import "../../sass/media-query";
 
 .news {
-  @include media-query("md") {
+  @include media-query("lg") {
     display: none;
   }
 

@@ -1,10 +1,19 @@
 @import "../../sass/mixins";
 @import "../../sass/variables";
+@import "../../sass/media-query";
 
 .sale-list {
   @include font-default;
+  @include media-query("lg") {
+    margin: 0 0 0 63px;
 
-  width: 715px;
+    .hide-element {
+      display: none;
+    }
+  }
+  max-width: 715px;
+  width: 100%;
+  margin: 0 64.75px 0 62px;
 
   h2 {
     @include font-title;
@@ -14,7 +23,7 @@
     display: flex;
     align-items: center;
     height: 30px;
-    padding: 0 14px 0 64px;
+    padding: 0 14px 0 63px;
 
     font-weight: 400;
 
@@ -27,13 +36,13 @@
       position: relative;
 
       display: flex;
-      justify-content: space-between;
       align-items: center;
       height: 40px;
       margin-top: 15px;
       padding: 3px 14px 0 64px;
 
       color: $gray;
+
       span:last-child {
         font-weight: 400;
         color: $white;
@@ -74,30 +83,86 @@
   }
 }
 
-.q1 {
-  width: 58px;
+.list-header span:nth-child(1),
+.list-items span:nth-child(1) {
+  width: 9.3%;
+  @include media-query("lg") {
+    width: 11%;
+  }
 }
 
-.q2 {
-  width: 89px;
+.list-header span:nth-child(2),
+.list-items span:nth-child(2) {
+  width: 14%;
+  @include media-query("lg") {
+    width: 15.5%;
+    text-align: left;
+  }
 }
 
-.q3 {
-  width: 66px;
+.list-items span:nth-child(2) {
+  padding-left: 20px;
 }
 
-.q4 {
-  width: 78px;
+.list-header span:nth-child(3),
+.list-items span:nth-child(3) {
+  width: 7%;
 }
 
-.q5 {
-  width: 72px;
+.list-header span:nth-child(4),
+.list-items span:nth-child(4) {
+  width: 11.8%;
+  @include media-query("lg") {
+    width: 20%;
+  }
 }
 
-.q6 {
-  width: 74px;
+.list-header span:nth-child(4) {
+  text-align: center;
+  @include media-query("lg") {
+    text-align: left;
+    padding-left: 25px;
+  }
 }
 
-.q7 {
-  width: 134px;
+.list-header span:nth-child(5),
+.list-items span:nth-child(5) {
+  text-align: center;
+  width: 15%;
+}
+
+.list-header span:nth-child(5) {
+  padding-left: 10px;
+}
+
+.list-header span:nth-child(6),
+.list-items span:nth-child(6) {
+  width: 11.8%;
+  @include media-query("lg") {
+    width: 14.3%;
+  }
+}
+
+.list-header span:nth-child(7),
+.list-items span:nth-child(7) {
+  width: 15.5%;
+  @include media-query("lg") {
+    width: 18.5%;
+  }
+}
+
+.list-header span:nth-child(8),
+.list-items span:nth-child(8) {
+  width: 15.6%;
+  @include media-query("lg") {
+    width: 21%;
+  }
+}
+
+.list-header span:nth-child(8) {
+  text-align: center;
+  @include media-query("lg") {
+    text-align: left;
+    padding-left: 40px;
+  }
 }

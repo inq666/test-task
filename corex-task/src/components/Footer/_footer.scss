@@ -1,6 +1,11 @@
 @import "../../sass/variables";
+@import "../../sass/media-query";
 
 footer {
+
+  @include media-query("lg") {
+    padding-left: 4px;
+  }
   .social__links {
     display: flex;
     justify-content: center;

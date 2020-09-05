@@ -37,9 +37,13 @@ ul {
 }
 
 .wrapper {
+  @include media-query("lg") {
+    padding: 0 30px;
+  }
+
   @include media-query("md") {
     max-width: 1024px;
-    padding: 0 30px;
+    padding: 0 55px 0 60px;
   }
   @include media-query("sm") {
     max-width: 768px;

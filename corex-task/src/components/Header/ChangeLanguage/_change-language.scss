@@ -2,7 +2,7 @@
 @import "../../../sass/media-query";
 
 .change-language-btn {
-  @include media-query("sm") {
+  @include media-query("md") {
     display: none;
   }
 

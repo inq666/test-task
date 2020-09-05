@@ -1,7 +1,14 @@
+@import "../sass/media-query";
+
 .main {
   margin-top: 104px;
   margin-bottom: 105px;
   padding: 0 60px;
   display: flex;
-  justify-content: space-between;
+  @include media-query("lg") {
+    justify-content: space-between;
+    padding: 0 58px;
+    margin-bottom: 168px;
+  }
+
 }

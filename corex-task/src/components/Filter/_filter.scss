@@ -3,7 +3,7 @@
 @import "../../sass/mixins";
 
 .filter {
-  @include media-query("sm") {
+  @include media-query("md") {
     display: none;
   }
 

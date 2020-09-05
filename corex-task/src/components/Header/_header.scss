@@ -1,13 +1,13 @@
 @import "../../sass/media-query";
 
 .header {
+  @include media-query("lg") {
+    padding-top: 27px;
+  }
   @include media-query("md") {
-    padding-top: 20px;
+    padding-top: 81px;
   }
   @include media-query("sm") {
-    padding-top: 60px;
-  }
-  @include media-query("xs") {
     padding: 29px 12px 0 20px;
   }
 
@@ -20,13 +20,13 @@
   }
 
   .header__logo {
-    @include media-query("sm") {
+    @include media-query("md") {
       width: 105.75px;
       height: 31px;
 
       background-image: url("../../images/icons/short-logo.svg");
     }
-    @include media-query("xs") {
+    @include media-query("sm") {
       width: 64px;
       height: 19px;
     }
@@ -39,10 +39,10 @@
   }
 
   .filter-menu {
-    @include media-query("sm") {
+    @include media-query("md") {
       display: block;
     }
-    @include media-query("xs") {
+    @include media-query("sm") {
       width: 21px;
       height: 22px;
     }
