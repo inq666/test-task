@@ -4,6 +4,7 @@ import { Filter } from '../components/Filter/Filter';
 import './_home.scss';
 import { SaleList } from '../components/OnSaleList/SaleList';
 import { News } from '../components/News/News';
+import { Footer } from '../components/Footer/Footer';
 
 class Home extends Component {
   render() {
@@ -15,6 +16,7 @@ class Home extends Component {
           <SaleList />
           <News />
         </main>
+        <Footer />
       </React.Fragment>
     )
   }

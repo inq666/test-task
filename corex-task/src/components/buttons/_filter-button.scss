@@ -1,6 +1,9 @@
 @import "../../sass/variables";
+@import "../../sass/mixins";
 
 .filter-btn {
+  @include font-default;
+
   position: relative;
   width: 212px;
   max-width: 212px;
@@ -8,12 +11,6 @@
   margin-bottom: 15px;
   margin-left: 2px;
   padding: 0 0 0 9px;
-
-  font-weight: 300;
-  font-size: 12px;
-  font-family: inherit;
-  text-align: left;
-  color: $white;
 
   background-color: $transparent-white;
   border: none;
@@ -28,8 +25,8 @@
   }
 
   .left-top-corner {
-   top: 0;
-   left: 0;
+    top: 0;
+    left: 0;
   }
   .right-top-corner {
     right: 0;
