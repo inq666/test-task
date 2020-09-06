@@ -1,4 +1,5 @@
-@import "../../../sass/media-query";
+@import "../../sass/media-query";
+@import "../../sass/variables";
 
 .shopping-basket {
   @include media-query("lg") {
@@ -16,13 +17,24 @@
     height: 20.5px;
     margin-right: 0;
   }
-
+  position: relative;
   width: 23px;
   height: 20.5px;
   margin-top: 3px;
   margin-right: 4px;
 
-  background-image: url("../../../images/icons/basket.svg");
+  background-image: url("../../images/icons/basket.svg");
   background-size: cover;
   cursor: pointer;
+
+  .counter {
+    text-align: center;
+    font-size: 12px;
+    background-color: $main-background-color;
+    top: -6px;
+    right: -6px;
+    width: 13px;
+    height: 17px;
+    position: absolute;
+  }
 }

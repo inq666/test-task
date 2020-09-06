@@ -1,5 +1,5 @@
-@import "../../../sass/variables";
-@import "../../../sass/media-query";
+@import "../../sass/variables";
+@import "../../sass/media-query";
 
 .change-language-btn {
   @include media-query("md") {
@@ -30,6 +30,6 @@
     width: 20px;
     height: 20px;
 
-    background-image: url("../../../images/icons/planet.svg");
+    background-image: url("../../images/icons/planet.svg");
   }
 }

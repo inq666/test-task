@@ -1,4 +1,4 @@
-import { FETCH_SALE_LIST } from './actionTypes';
+import { FETCH_SALE_LIST, ADD_ITEM_CART } from './actionTypes';
 import axios from 'axios';
 
 /*thunk*/
@@ -15,5 +15,11 @@ export function fetchSaleListCompleted(saleListItems) {
   return {
     type: FETCH_SALE_LIST,
     saleListItems
+  }
+}
+
+export function addItemCart() {
+  return {
+    type: ADD_ITEM_CART,
   }
 }

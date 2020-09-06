@@ -1,11 +1,11 @@
 import React from 'react';
-import Home from './containers/Home';
+import MainPage from './containers/MainPage/MainPage';
 import './_app.scss';
 
 function App() {
   return (
     <div className="wrapper">
-      <Home />
+      <MainPage />
     </div>
   );
 }

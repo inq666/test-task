@@ -4,8 +4,11 @@ import { SaleItem } from '../SaleItem/SaleItem';
 import { Layout } from '../../hoc/Layout/Layout';
 
 export const SaleList = (props) => {
-  const items = props.saleListItems.map(item => (
-    <SaleItem data={item} />
+  const items = props.saleListItems.map((item, index) => (
+    <SaleItem
+      key={index + item.name}
+      data={item}
+      addItemCart={props.addItemCart} />
   ));
   return (
     <div className="sale-list">

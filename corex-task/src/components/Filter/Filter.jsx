@@ -5,7 +5,7 @@ import { FilterButton } from '../buttons/FilterButton';
 export const Filter = () => {
   const filterButtons = ['By Manufacturer', 'Minimum price', 'Maximum price']
   const buttons = filterButtons.map(button => (
-    <FilterButton name={button} />
+    <FilterButton key={button} name={button} />
   ))
   return (
       <div className="filter">
