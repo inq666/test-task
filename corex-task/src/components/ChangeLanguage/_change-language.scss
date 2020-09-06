@@ -22,8 +22,6 @@
   cursor: pointer;
 
   &:before {
-    pointer-events:none;
-    cursor: default;
     content: "";
     position: absolute;
     top: 4px;
@@ -33,5 +31,8 @@
     height: 20px;
 
     background-image: url("../../images/icons/planet.svg");
+    
+    pointer-events:none;
+    cursor: default;
   }
 }
