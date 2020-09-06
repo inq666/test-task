@@ -9,7 +9,7 @@ export const SaleItem = (props) => {
     const target = event.target.closest('.item');
     if (!target.dataset.added) {
       target.dataset.added = true;
-      props.addItemCart()
+      props.addItemCartHandler()
     }
   };
 

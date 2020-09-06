@@ -8,9 +8,11 @@ import './_header.scss';
 
 
 export const Header = () => {
+
   const itemInCartCounter = useSelector(state => state.mainPage.itemInCartCounter)
   const language = useSelector(state => state.mainPage.language)
   const dispatch = useDispatch();
+
   const changeLanguageHandler = () => {
     dispatch(changeLanguage())
   }

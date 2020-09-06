@@ -1,9 +1,14 @@
-import { FETCH_SALE_LIST, ADD_ITEM_CART, CHANGE_LANGUAGE } from "../actions/actionTypes";
+import {
+  FETCH_SALE_LIST, ADD_ITEM_CART, CHANGE_LANGUAGE, SORT_BY_MIN,
+  SORT_BY_MAX, SORT_BY_MANUFACTURER, SORT_BY_MANUFACTURER_REVERSE
+} from "../actions/actionTypes";
+import { sortByManufacturer } from "../actions/saleListAction";
 
 const initialState = {
   saleListItems: [],
   itemInCartCounter: 0,
-  language: 'ENG'
+  language: 'ENG',
+  sortByManufacturerStatus: false,
 }
 
 export default function saleListReducer(state = initialState, action) {
@@ -13,16 +18,44 @@ export default function saleListReducer(state = initialState, action) {
         ...state,
         saleListItems: action.saleListItems,
       }
-      case ADD_ITEM_CART:
+    case ADD_ITEM_CART:
       return {
         ...state,
         itemInCartCounter: state.itemInCartCounter + 1,
       }
-      case CHANGE_LANGUAGE:
-        return {
-          ...state,
-          language: state.language === 'ENG' ? 'РУС' : 'ENG'
-        }
+    case CHANGE_LANGUAGE:
+      return {
+        ...state,
+        language: state.language === 'ENG' ? 'РУС' : 'ENG'
+      }
+    case SORT_BY_MAX:
+      return {
+        ...state,
+        sortByManufacturerStatus: false,
+        saleListItems: state.saleListItems.slice().sort((a, b) => (
+          parseFloat(a.price.split(' ')[2].slice(1)) > parseFloat(b.price.split(' ')[2].slice(1)) ? -1 : 1
+        )),
+      }
+    case SORT_BY_MIN:
+      return {
+        ...state,
+        sortByManufacturerStatus: false,
+        saleListItems: state.saleListItems.slice().sort((a, b) => (
+          parseFloat(a.price.slice(1)) > parseFloat(b.price.slice(1)) ? 1 : -1
+        )),
+      }
+    case SORT_BY_MANUFACTURER:
+      return {
+        ...state,
+        sortByManufacturerStatus: true,
+        saleListItems: state.saleListItems.slice().sort((a, b) => a.manufacturer > b.manufacturer ? 1 : -1),
+      }
+    case SORT_BY_MANUFACTURER_REVERSE:
+      return {
+        ...state,
+        sortByManufacturerStatus: false,
+        saleListItems: state.saleListItems.slice().sort((a, b) => a.manufacturer > b.manufacturer ? -1 : 1),
+      }
     default:
       return state;
   }

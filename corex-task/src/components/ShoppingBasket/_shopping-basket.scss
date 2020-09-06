@@ -7,17 +7,19 @@
     margin-right: 2px;
   }
   @include media-query("md") {
-    margin-top: 0;
-    margin-right: 3.5px;
     width: 36.5px;
     height: 31.5px;
+    margin-top: 0;
+    margin-right: 3.5px;
   }
   @include media-query("sm") {
     width: 23px;
     height: 20.5px;
     margin-right: 0;
   }
+
   position: relative;
+
   width: 23px;
   height: 20.5px;
   margin-top: 3px;
@@ -28,13 +30,29 @@
   cursor: pointer;
 
   .counter {
-    text-align: center;
-    font-size: 12px;
-    background-color: $main-background-color;
+    @include media-query("md") {
+      width: 17px;
+      height: 20px;
+
+      font-size: 16px;
+    }
+    @include media-query("sm") {
+      width: 13px;
+      height: 17px;
+
+      font-size: 12px;
+    }
+
+    position: absolute;
     top: -6px;
     right: -6px;
+
     width: 13px;
     height: 17px;
-    position: absolute;
+
+    font-size: 12px;
+    text-align: center;
+
+    background-color: $main-background-color;
   }
 }
