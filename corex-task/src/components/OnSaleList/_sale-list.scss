@@ -6,20 +6,28 @@
   @include font-default;
   @include media-query("lg") {
     margin: 0 0 0 63px;
-
-    .hide-element {
-      display: none;
-    }
   }
-  max-width: 715px;
+  @include media-query("md") {
+    max-width: none;
+    margin: 0;
+  }
+
   width: 100%;
+  max-width: 714px;
   margin: 0 64.75px 0 62px;
 
   h2 {
     @include font-title;
+    @include media-query("md") {
+      display: none;
+    }
   }
 
   .list-header {
+    @include media-query("md") {
+      display: none;
+    }
+
     display: flex;
     align-items: center;
     height: 30px;
@@ -30,139 +38,114 @@
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid $transparent-white;
   }
-
-  .list-items {
-    div {
-      position: relative;
-
-      display: flex;
-      align-items: center;
-      height: 40px;
-      margin-top: 15px;
-      padding: 3px 14px 0 64px;
-
-      color: $gray;
-
-      span:last-child {
-        font-weight: 400;
-        color: $white;
-      }
-
-      &::before {
-        content: "";
-        position: absolute;
-        top: 15px;
-        left: 16px;
-
-        width: 14px;
-        height: 13px;
-
-        background-image: url("../../images/icons/star.svg");
-        background-size: cover;
-      }
-
-      &::after {
-        content: "";
-        position: absolute;
-        top: 15px;
-        left: 45px;
-
-        width: 6px;
-        height: 13px;
-
-        background-image: url("../../images/icons/green-arrow.svg");
-        background-size: cover;
-      }
-    }
-    div:nth-child(2n + 1) {
-      background-color: $transparent-white;
-    }
-    div:nth-child(2n) {
-      background-color: rgba(255, 255, 255, 0.05);
-    }
-  }
 }
 
-.list-header span:nth-child(1),
-.list-items span:nth-child(1) {
-  width: 9.3%;
+.list-header span:nth-of-type(1),
+.list-items span:nth-of-type(1) {
   @include media-query("lg") {
     width: 11%;
   }
+
+  width: 9.3%;
 }
 
-.list-header span:nth-child(2),
-.list-items span:nth-child(2) {
-  width: 14%;
+.list-header span:nth-of-type(2),
+.list-items span:nth-of-type(2) {
   @include media-query("lg") {
     width: 15.5%;
+
     text-align: left;
   }
+
+  width: 14%;
 }
 
-.list-items span:nth-child(2) {
+.list-items span:nth-of-type(2) {
   padding-left: 20px;
 }
 
-.list-header span:nth-child(3),
-.list-items span:nth-child(3) {
+.list-header span:nth-of-type(3),
+.list-items span:nth-of-type(3) {
+  @include media-query("lg") {
+    display: none;
+  }
+
   width: 7%;
 }
 
-.list-header span:nth-child(4),
-.list-items span:nth-child(4) {
-  width: 11.8%;
+.list-header span:nth-of-type(4),
+.list-items span:nth-of-type(4) {
   @include media-query("lg") {
     width: 20%;
   }
-}
-
-.list-header span:nth-child(4) {
-  text-align: center;
-  @include media-query("lg") {
-    text-align: left;
-    padding-left: 25px;
+  @include media-query("md") {
+    width: 100%;
   }
+
+  width: 11.8%;
 }
 
-.list-header span:nth-child(5),
-.list-items span:nth-child(5) {
+.list-header span:nth-of-type(4) {
+  @include media-query("lg") {
+    padding-left: 25px;
+
+    text-align: left;
+  }
+
   text-align: center;
-  width: 15%;
 }
 
-.list-header span:nth-child(5) {
+.list-header span:nth-of-type(5),
+.list-items span:nth-of-type(5) {
+  @include media-query("lg") {
+    display: none;
+  }
+
+  width: 15%;
+
+  text-align: center;
+}
+
+.list-header span:nth-of-type(5) {
   padding-left: 10px;
 }
 
-.list-header span:nth-child(6),
-.list-items span:nth-child(6) {
-  width: 11.8%;
+.list-header span:nth-of-type(6),
+.list-items span:nth-of-type(6) {
   @include media-query("lg") {
     width: 14.3%;
   }
+
+  width: 11.8%;
 }
 
-.list-header span:nth-child(7),
-.list-items span:nth-child(7) {
-  width: 15.5%;
+.list-header span:nth-of-type(7),
+.list-items span:nth-of-type(7) {
   @include media-query("lg") {
     width: 18.5%;
   }
+
+  width: 15.5%;
 }
 
-.list-header span:nth-child(8),
-.list-items span:nth-child(8) {
-  width: 15.6%;
+.list-header span:nth-of-type(8),
+.list-items span:nth-of-type(8) {
   @include media-query("lg") {
     width: 21%;
   }
+  @include media-query("md") {
+    width: 100%;
+  }
+
+  width: 15.6%;
 }
 
-.list-header span:nth-child(8) {
-  text-align: center;
+.list-header span:nth-of-type(8) {
   @include media-query("lg") {
-    text-align: left;
     padding-left: 40px;
+
+    text-align: left;
   }
+
+  text-align: center;
 }

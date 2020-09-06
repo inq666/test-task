@@ -5,10 +5,10 @@
     padding-top: 27px;
   }
   @include media-query("md") {
-    padding-top: 81px;
+    padding: 60px 25px 0 30px;
   }
   @include media-query("sm") {
-    padding: 29px 12px 0 20px;
+    padding: 29px 13px 0 15px;
   }
 
   display: flex;

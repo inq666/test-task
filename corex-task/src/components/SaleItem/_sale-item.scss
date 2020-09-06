@@ -1,0 +1,149 @@
+@import "../../sass/mixins";
+@import "../../sass/variables";
+@import "../../sass/media-query";
+
+@include media-query("md") {
+  .hide-md {
+    display: none;
+  }
+  .hide {
+    display: inline-block;
+  }
+}
+
+.item {
+  @include media-query("md") {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    min-height: 707px;
+    margin: 0 0 27px;
+    padding: 7.6% 0 0;
+
+    font-weight: 400;
+    font-size: 24px;
+
+    background-color: $transparent-white !important;
+    span {
+      margin-left: 60px;
+    }
+
+    .item__price {
+      font-weight: 700 !important;
+      font-size: 45px;
+    }
+  }
+  @include media-query("sm") {
+    @include adaptive-font(24, 16, $sm);
+
+    min-height: 394px;
+    margin-bottom: 15px;
+    padding: 6.5% 0 6%;
+    span {
+      margin: 0 0 0 7.2%;
+    }
+  }
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  height: 40px;
+  margin-top: 15px;
+  padding: 3px 14px 0 64px;
+
+  color: $gray;
+
+  .item__price {
+    @include media-query("sm") {
+      @include adaptive-font(45, 24, $sm);
+    }
+  }
+
+  span:last-child {
+    font-weight: 400;
+    color: $white;
+  }
+
+  &::before {
+    @include media-query("md") {
+      top: 60px;
+      right: 65px;
+      left: auto;
+
+      width: 5.5%;
+      height: 5.5%;
+    }
+    @include media-query("sm") {
+      top: 7.7%;
+      right: 7.7%;
+      left: auto;
+
+      width: 5%;
+      height: 5%;
+    }
+
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 16px;
+
+    width: 14px;
+    height: 13px;
+
+    background-image: url("../../images/icons/star.svg");
+    background-size: cover;
+  }
+
+  &::after {
+    @include media-query("md") {
+      display: none;
+    }
+
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 45px;
+
+    width: 6px;
+    height: 13px;
+
+    background-image: url("../../images/icons/green-arrow.svg");
+    background-size: cover;
+  }
+}
+.item:nth-child(2n + 1) {
+  background-color: $transparent-white;
+}
+.item:nth-child(2n) {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.item__name {
+  @include media-query("md") {
+    display: block;
+    margin: 0 0 0 60px;
+
+    line-height: 28px;
+  }
+  @include media-query("sm") {
+    margin: 0 0 0 7.2%;
+
+    line-height: 20px;
+  }
+
+  display: none;
+}
+.item__img {
+  @include media-query("md") {
+    display: block;
+    width: 50.9%;
+    height: auto;
+    margin: 11.6% auto 11.8%;
+  }
+  @include media-query("sm") {
+    width: 45.73%;
+    margin: 13% auto 15.7%;
+  }
+
+  display: none;
+}

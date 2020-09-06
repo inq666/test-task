@@ -2,21 +2,16 @@
 
 @mixin adaptive-font($pxSize, $minSize, $maxWidth) {
   $addSize: $pxSize - $minSize;
-
-  font-size: calc(#{$minSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
+  $addMinSize: $addSize + $addSize * 0.7;
+  @media (max-width: 768px) {
+    font-size: calc(#{$minSize + px} + #{$addMinSize} * ((100vw - 425px) / #{$maxWidth}));
+  }
+  @media (min-width: 768px) {
+    font-size: calc(#{$minSize + px} + #{$addSize} * (100vw) / #{$maxWidth});
+  }
 }
 
 @mixin font-title {
-  @include media-query("md") {
-    @include adaptive-font(24, 18, $md);
-  }
-  @include media-query("sm") {
-    @include adaptive-font(24, 18, $sm);
-  }
-  @include media-query("xs") {
-    @include adaptive-font(24, 18, $xs);
-  }
-
   margin-bottom: 14px;
   font-size: 24px;
   font-weight: 500;
@@ -25,15 +20,6 @@
 }
 
 @mixin font-default {
-  @include media-query("md") {
-    @include adaptive-font(12, 5, $md);
-  }
-  @include media-query("sm") {
-    @include adaptive-font(12, 5, $sm);
-  }
-  @include media-query("xs") {
-    @include adaptive-font(12, 5, $xs);
-  }
   font-size: 12px;
   font-weight: 300;
   font-family: "Open Sans", sans-serif;
