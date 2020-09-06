@@ -18,9 +18,10 @@ export function fetchSaleListCompleted(saleListItems) {
   }
 }
 
-export function addItemCart() {
+export function addItemCart(id) {
   return {
     type: ADD_ITEM_CART,
+    id
   }
 }
 

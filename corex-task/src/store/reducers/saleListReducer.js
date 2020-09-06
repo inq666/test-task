@@ -18,9 +18,17 @@ export default function saleListReducer(state = initialState, action) {
         saleListItems: action.saleListItems,
       }
     case ADD_ITEM_CART:
+
       return {
         ...state,
         itemInCartCounter: state.itemInCartCounter + 1,
+        saleListItems: state.saleListItems.map((item) => {
+          console.log(item.id, action.id)
+          if (item.id === action.id) {
+            item.added = true;
+          }
+          return item
+        })
       }
     case CHANGE_LANGUAGE:
       return {

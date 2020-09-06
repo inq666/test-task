@@ -5,7 +5,6 @@ import { Layout } from '../../hoc/Layout/Layout';
 import { translateSaleList } from '../../data/translateSaleList';
 
 export const SaleList = ({ saleListItems, addItemCartHandler, language }) => {
-
   const items = saleListItems.map((item, index) => (
     <SaleItem
       language={language}

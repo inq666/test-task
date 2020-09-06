@@ -9,7 +9,7 @@ export const SaleItem = (props) => {
     const target = event.target.closest('.item');
     if (!target.dataset.added) {
       target.dataset.added = true;
-      props.addItemCartHandler()
+      props.addItemCartHandler(target.id)
     }
   };
 
@@ -20,14 +20,18 @@ export const SaleItem = (props) => {
 
   const {
     name, release, manufacturer, model, hash, algorithm,
-    efficiency, profit, price, imageUrl
+    efficiency, profit, price, imageUrl, id, added
   } = props.data;
 
   const date = props.language === 'ENG' ? release : translateMonthFunc('РУС');
 
   return (
     <Layout>
-      <div className="item" onClick={addItemCardHandler}>
+      <div
+        className="item"
+        id={id}
+        data-added={added ? added : null}
+        onClick={addItemCardHandler}>
         <p className="item__name">{name}</p>
         <span className="hide-md">{date}</span>
         <span className="hide-md">{manufacturer}</span>
@@ -36,10 +40,15 @@ export const SaleItem = (props) => {
         <span className="hide-md">{algorithm}</span>
         <span className="hide-md">{efficiency}</span>
         <span className="hide-md">
-          <span className="item__profit">{profit} </span>
+          <span className="item__profit">
+            {profit}
+          </span>
            / {props.language === 'ENG' ? 'day' : 'день'}
         </span>
-        <img alt="item" className="item__img" src={imageUrl} />
+        <img
+          alt="item"
+          className="item__img"
+          src={imageUrl} />
         <span className="item__price">{price}</span>
       </div>
     </Layout>

@@ -17,8 +17,8 @@ class MainPage extends Component {
     this.props.fetchSaleList();
   }
 
-  addItemCartHandler() {
-    this.props.addItemCart();
+  addItemCartHandler(id) {
+    this.props.addItemCart(id);
   }
 
   sortDataHandler(id) {
@@ -45,7 +45,7 @@ class MainPage extends Component {
           <SaleList
             language={this.props.language}
             saleListItems={this.props.saleListItems}
-            addItemCartHandler={() => this.addItemCartHandler()} />
+            addItemCartHandler={(id) => this.addItemCartHandler(id)} />
           <News
             language={this.props.language}
           />
