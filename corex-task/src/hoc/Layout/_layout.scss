@@ -1,28 +1,29 @@
 @import "../../sass/variables";
+@import "../../sass/media-query";
 
-.corner-container {
+.layout-container {
   margin-bottom: 15px;
   position: relative;
-  .corner {
+  .layout {
     width: 2px;
     height: 2px;
     background-color: $white;
     position: absolute;
   }
 
-  .left-top-corner {
+  .left-top-layout {
     top: 0;
     left: 0;
   }
-  .right-top-corner {
+  .right-top-layout {
     right: 0;
     top: 0;
   }
-  .left-bottom-corner {
+  .left-bottom-layout {
     left: 0;
     bottom: 0;
   }
-  .right-bottom-corner {
+  .right-bottom-layout {
     right: 0;
     bottom: 0;
   }

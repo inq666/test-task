@@ -6,12 +6,12 @@ footer {
     padding-left: 4px;
   }
 
+  margin: 0 auto;
   position: fixed;
-  margin: auto;
-  position: absolute;
   left: 0;
   bottom: 0;
   right: 0;
+
   .social__links {
     display: flex;
     justify-content: center;
@@ -59,7 +59,8 @@ footer {
     }
   }
 
-  .corner-container {
+  .layout-container {
     margin-right: 15px;
+    margin-bottom: 0;
   }
 }

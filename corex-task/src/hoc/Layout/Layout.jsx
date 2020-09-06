@@ -3,11 +3,11 @@ import './_layout.scss';
 
 export const Layout = (props) => {
   return (
-    <div className="corner-container">
-      <div className="corner left-top-corner" />
-      <div className="corner right-top-corner" />
-      <div className="corner left-bottom-corner" />
-      <div className="corner right-bottom-corner" />
+    <div className="layout-container">
+      <div className="layout left-top-layout" />
+      <div className="layout right-top-layout" />
+      <div className="layout left-bottom-layout" />
+      <div className="layout right-bottom-layout" />
       {props.children}
     </div>
   )
