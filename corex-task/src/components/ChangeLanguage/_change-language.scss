@@ -22,6 +22,8 @@
   cursor: pointer;
 
   &:before {
+    pointer-events:none;
+    cursor: default;
     content: "";
     position: absolute;
     top: 4px;
