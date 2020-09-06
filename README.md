@@ -1,4 +1,4 @@
-# SPEAKIT
+# Corex
 
 ### GitHub: https://github.com/inq666/test-task
 ### Bitbucket: https://bitbucket.org/inq666/test-task/src/master/
