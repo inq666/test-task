@@ -3,6 +3,7 @@
 @import "../../sass/mixins";
 
 .filter {
+  padding-left: 2px;
   @include media-query("md") {
     display: none;
   }

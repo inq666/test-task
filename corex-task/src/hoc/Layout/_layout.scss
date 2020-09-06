@@ -1,0 +1,29 @@
+@import "../../sass/variables";
+
+.corner-container {
+  margin-bottom: 15px;
+  position: relative;
+  .corner {
+    width: 2px;
+    height: 2px;
+    background-color: $white;
+    position: absolute;
+  }
+
+  .left-top-corner {
+    top: 0;
+    left: 0;
+  }
+  .right-top-corner {
+    right: 0;
+    top: 0;
+  }
+  .left-bottom-corner {
+    left: 0;
+    bottom: 0;
+  }
+  .right-bottom-corner {
+    right: 0;
+    bottom: 0;
+  }
+}

@@ -12,6 +12,7 @@
 }
 
 .item {
+  cursor: pointer;
   @include media-query("md") {
     flex-direction: column;
     align-items: flex-start;
