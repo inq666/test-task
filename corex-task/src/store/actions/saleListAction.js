@@ -6,7 +6,6 @@ export function fetchSaleList() {
   return async (dispatch) => {
     const response = await axios.get('https://corex-test.firebaseio.com/.json');
     const saleListItems = response.data.saleList.listItems;
-    console.log(saleListItems)
     dispatch(fetchSaleListCompleted(saleListItems));
   }
 }

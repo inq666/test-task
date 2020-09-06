@@ -7,16 +7,16 @@ export const Footer = () => {
     <footer>
       <ul className="social__links">
         <Layout>
-          <li><a className="link__facebook" href="https://www.facebook.com/" /></li>
+          <li><a className="link__facebook" href="https://www.facebook.com/"> </a></li>
         </Layout>
         <Layout>
-          <li><a className="link__twitter" href="https://twitter.com/" /></li>
+          <li><a className="link__twitter" href="https://twitter.com/"> </a></li>
         </Layout>
         <Layout>
-          <li><a className="link__youtube" href="https://www.youtube.com/" /></li>
+          <li><a className="link__youtube" href="https://www.youtube.com/"> </a></li>
         </Layout>
         <Layout>
-          <li><a className="link__reddit" href="https://www.reddit.com/" /></li>
+          <li><a className="link__reddit" href="https://www.reddit.com/"> </a></li>
         </Layout>
       </ul>
     </footer>

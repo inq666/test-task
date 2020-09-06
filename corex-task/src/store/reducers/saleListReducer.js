@@ -2,7 +2,6 @@ import {
   FETCH_SALE_LIST, ADD_ITEM_CART, CHANGE_LANGUAGE, SORT_BY_MIN,
   SORT_BY_MAX, SORT_BY_MANUFACTURER, SORT_BY_MANUFACTURER_REVERSE
 } from "../actions/actionTypes";
-import { sortByManufacturer } from "../actions/saleListAction";
 
 const initialState = {
   saleListItems: [],
