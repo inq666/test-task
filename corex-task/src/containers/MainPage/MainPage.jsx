@@ -23,11 +23,12 @@ class MainPage extends Component {
       <React.Fragment>
         <Header />
         <main className="main">
-          <Filter />
+          <Filter language={this.props.language} />
           <SaleList
+            language={this.props.language}
             saleListItems={this.props.saleListItems}
             addItemCart={() => this.addItemCart()} />
-          <News />
+          <News language={this.props.language} />
         </main>
         <Footer />
       </React.Fragment>
@@ -37,7 +38,8 @@ class MainPage extends Component {
 
 function mapStateToProps(state) {
   return {
-    saleListItems: state.saleList.saleListItems,
+    saleListItems: state.mainPage.saleListItems,
+    language: state.mainPage.language,
   }
 }
 

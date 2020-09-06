@@ -1,4 +1,4 @@
-import { FETCH_SALE_LIST, ADD_ITEM_CART } from './actionTypes';
+import { FETCH_SALE_LIST, ADD_ITEM_CART, CHANGE_LANGUAGE } from './actionTypes';
 import axios from 'axios';
 
 /*thunk*/
@@ -21,5 +21,11 @@ export function fetchSaleListCompleted(saleListItems) {
 export function addItemCart() {
   return {
     type: ADD_ITEM_CART,
+  }
+}
+
+export function changeLanguage() {
+  return {
+    type: CHANGE_LANGUAGE,
   }
 }

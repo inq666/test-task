@@ -2,11 +2,11 @@ import React from 'react';
 import './_news.scss';
 import { Layout } from '../../hoc/Layout/Layout';
 
-export const News = () => {
+export const News = ({language}) => {
   return (
 
     <article className="news">
-      <h2>NEWS</h2>
+      <h2>{language === 'ENG' ? 'NEWS' : 'НОВОСТИ'}</h2>
       <Layout>
         <div className="news__banner">
           <div className="banner__title-img" />

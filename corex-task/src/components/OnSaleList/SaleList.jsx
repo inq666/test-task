@@ -3,27 +3,36 @@ import './_sale-list.scss';
 import { SaleItem } from '../SaleItem/SaleItem';
 import { Layout } from '../../hoc/Layout/Layout';
 
-export const SaleList = (props) => {
-  const items = props.saleListItems.map((item, index) => (
+export const SaleList = ({ saleListItems, addItemCart, language }) => {
+
+  const items = saleListItems.map((item, index) => (
     <SaleItem
+      language={language}
       key={index + item.name}
       data={item}
-      addItemCart={props.addItemCart} />
+      addItemCart={addItemCart} />
+  ));
+
+  const textTranslate = {
+    title: {
+      ENG: 'ON SALE',
+      РУС: 'В ПРОДАЖЕ',
+    },
+    headerTitle: {
+      ENG: ['Release', 'Manufacturer', 'Model', 'Hash', 'Algorithm', 'Efficiency', 'Profit', 'Price',],
+      РУС: ['Выпуск', 'Изготовитель', 'Модель', 'Хэш', 'Алгоритм', 'КПД', 'Прибыль', 'Цена',]
+    }
+  }
+
+  const headerTitles = textTranslate.headerTitle[language].map((title) => (
+    <span key={title}>{title}</span>
   ));
   return (
     <div className="sale-list">
-      <h2>ON SALE</h2>
-
+      <h2>{textTranslate.title[language]}</h2>
       <Layout>
         <div className="list-header">
-          <span>Release</span>
-          <span>Manufacturer</span>
-          <span>Model</span>
-          <span>Hash</span>
-          <span>Algorithm</span>
-          <span>Efficiency</span>
-          <span>Profit</span>
-          <span>Price</span>
+          {headerTitles}
         </div>
       </Layout>
       <div className="list-items">
