@@ -1,5 +1,17 @@
 {
   "projects": {
     "default": "corex-test"
+  },
+  "targets": {
+    "corex-test": {
+      "hosting": {
+        "master": [
+          "corex-test"
+        ],
+        "develop": [
+          "develop-963ae"
+        ]
+      }
+    }
   }
 }
