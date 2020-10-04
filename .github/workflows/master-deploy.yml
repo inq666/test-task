@@ -1,3 +1,4 @@
+
 name: CI
 
 on:
@@ -19,4 +20,5 @@ jobs:
         args: deploy --only hosting:master
       env:
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+
 
