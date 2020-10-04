@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-    branches: master
+    branches: develop
 
 jobs:
   firebase-deploy-master:
@@ -17,7 +17,7 @@ jobs:
     - run: npm run-script build
     - uses: w9jds/firebase-action@master
       with:
-        args: deploy --only hosting:master
+        args: deploy --only hosting:develop
       env:
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
 
