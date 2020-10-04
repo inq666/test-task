@@ -15,7 +15,7 @@ export const Filter = ({ language, sortDataHandler }) => {
 
   return (
     <div className="filter">
-      <h2>{translateFilter.title[language]}</h2>
+      <h2>11111111111111</h2>
       {buttons}
     </div>
   )
