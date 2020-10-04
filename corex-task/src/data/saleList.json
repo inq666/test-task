@@ -1,0 +1,149 @@
+{
+  "saleList" : {
+    "listItems" : [ {
+      "algorithm" : "SHA-256",
+      "efficiency" : "18.00j/H/s",
+      "hash" : "10.5-14.5 th/s",
+      "id" : "1",
+      "imageUrl" : "https://i.ibb.co/kMf6wks/bit.png",
+      "manufacturer" : "Sitmain",
+      "model" : "S9i",
+      "name" : "USED Antminer S9",
+      "price" : "$100.00 - $117.00",
+      "profit" : "$122.88",
+      "release" : "Mar 2019"
+    }, {
+      "algorithm" : "SHA-256",
+      "efficiency" : "9.00j/H/s",
+      "hash" : "10.5-14.5 th/s",
+      "id" : "2",
+      "imageUrl" : "https://im5.ezgif.com/tmp/ezgif-5-5ffc7d36cea5.png",
+      "manufacturer" : "Aitmain",
+      "model" : "S9i",
+      "name" : "Aorus RTX 2070 8G",
+      "price" : "$199.00 - $217.00",
+      "profit" : "$12.8",
+      "release" : "Feb 2019"
+    }, {
+      "algorithm" : "SHA-256",
+      "efficiency" : "5.00j/H/s",
+      "hash" : "10.5-14.5 th/s",
+      "id" : "3",
+      "imageUrl" : "https://i.ibb.co/kMf6wks/bit.png",
+      "manufacturer" : "Xitmain",
+      "model" : "S9i",
+      "name" : "USED Antminer S9",
+      "price" : "$98.00 - $200.00",
+      "profit" : "$122.88",
+      "release" : "May 2019"
+    }, {
+      "algorithm" : "SHA-256",
+      "efficiency" : "11.00j/H/s",
+      "hash" : "10.5-14.5 th/s",
+      "id" : "4",
+      "imageUrl" : "https://im5.ezgif.com/tmp/ezgif-5-5ffc7d36cea5.png",
+      "manufacturer" : "Litmain",
+      "model" : "S9i",
+      "name" : "Aorus RTX 2070 8G",
+      "price" : "$99.00 - $150.00",
+      "profit" : "$122.88",
+      "release" : "Feb 2018"
+    }, {
+      "algorithm" : "SHA-256",
+      "efficiency" : "3.00j/H/s",
+      "hash" : "10.5-14.5 th/s",
+      "id" : "5",
+      "imageUrl" : "https://i.ibb.co/kMf6wks/bit.png",
+      "manufacturer" : "Uitmain",
+      "model" : "S9i",
+      "name" : "USED Antminer S9",
+      "price" : "$130.00 - $217.00",
+      "profit" : "$50.98",
+      "release" : "Jan 2019"
+    }, {
+      "algorithm" : "SHA-256",
+      "efficiency" : "20.00j/H/s",
+      "hash" : "10.5-14.5 th/s",
+      "id" : "6",
+      "imageUrl" : "https://im5.ezgif.com/tmp/ezgif-5-5ffc7d36cea5.png",
+      "manufacturer" : "Bitmain",
+      "model" : "S9i",
+      "name" : "Aorus RTX 2070 8G",
+      "price" : "$145.00 - $477.00",
+      "profit" : "$122.88",
+      "release" : "Jun 2020"
+    }, {
+      "algorithm" : "SHA-256",
+      "efficiency" : "1.00j/H/s",
+      "hash" : "10.5-14.5 th/s",
+      "id" : "7",
+      "imageUrl" : "https://i.ibb.co/kMf6wks/bit.png",
+      "manufacturer" : "Nitmain",
+      "model" : "S9i",
+      "name" : "USED Antminer S9",
+      "price" : "$166.00 - $210.00",
+      "profit" : "$132.88",
+      "release" : "Jul 2019"
+    }, {
+      "algorithm" : "SHA-256",
+      "efficiency" : "10.00j/H/s",
+      "hash" : "10.5-14.5 th/s",
+      "id" : "8",
+      "imageUrl" : "https://im5.ezgif.com/tmp/ezgif-5-5ffc7d36cea5.png",
+      "manufacturer" : "Oitmain",
+      "model" : "S9i",
+      "name" : "Aorus RTX 2070 8G",
+      "price" : "$131.00 - $217.00",
+      "profit" : "$222.88",
+      "release" : "Sep 2019"
+    }, {
+      "algorithm" : "SHA-256",
+      "efficiency" : "8.00j/H/s",
+      "hash" : "10.5-14.5 th/s",
+      "id" : "9",
+      "imageUrl" : "https://i.ibb.co/kMf6wks/bit.png",
+      "manufacturer" : "Qitmain",
+      "model" : "S9i",
+      "name" : "USED Antminer S9",
+      "price" : "$167.00 - $219.00",
+      "profit" : "$152.88",
+      "release" : "Mar 2019"
+    }, {
+      "algorithm" : "SHA-256",
+      "efficiency" : "15.00j/H/s",
+      "hash" : "10.5-14.5 th/s",
+      "id" : "10",
+      "imageUrl" : "https://im5.ezgif.com/tmp/ezgif-5-5ffc7d36cea5.png",
+      "manufacturer" : "Witmain",
+      "model" : "S9i",
+      "name" : "Aorus RTX 2070 8G",
+      "price" : "$137.00 - $140.00",
+      "profit" : "$129.88",
+      "release" : "Aug 2019"
+    }, {
+      "algorithm" : "SHA-256",
+      "efficiency" : "5.00j/H/s",
+      "hash" : "10.5-14.5 th/s",
+      "id" : "11",
+      "imageUrl" : "https://i.ibb.co/kMf6wks/bit.png",
+      "manufacturer" : "Pitmain",
+      "model" : "S9i",
+      "name" : "USED Antminer S9",
+      "price" : "$133.00 - $233.00",
+      "profit" : "$111.11",
+      "release" : "Mar 2019"
+    }, {
+      "algorithm" : "SHA-256",
+      "efficiency" : "4.00j/H/s",
+      "hash" : "10.5-14.5 th/s",
+      "id" : "12",
+      "imageUrl" : "https://im5.ezgif.com/tmp/ezgif-5-5ffc7d36cea5.png",
+      "manufacturer" : "Mitmain",
+      "model" : "S9i",
+      "name" : "Aorus RTX 2070 8G",
+      "price" : "$94.00 - $199.00",
+      "profit" : "$133.88",
+      "release" : "May 2020"
+    } ]
+  }
+}

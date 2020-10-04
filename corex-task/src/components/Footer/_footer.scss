@@ -1,0 +1,66 @@
+@import "../../sass/variables";
+@import "../../sass/media-query";
+
+footer {
+  @include media-query("lg") {
+    padding-left: 4px;
+  }
+
+  margin: 0 auto;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  .social__links {
+    display: flex;
+    justify-content: center;
+
+    list-style: none;
+
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: 30px;
+      background-color: $transparent-white;
+    }
+
+    a {
+      display: block;
+
+      background-size: cover;
+    }
+
+    .link__facebook {
+      width: 9px;
+      height: 15px;
+
+      background-image: url("../../images/icons/social/facebook.svg");
+    }
+    .link__twitter {
+      width: 18px;
+      height: 15px;
+
+      background-image: url("../../images/icons/social/twitter.svg");
+    }
+    .link__youtube {
+      width: 18px;
+      height: 13px;
+
+      background-image: url("../../images/icons/social/youtube.svg");
+    }
+    .link__reddit {
+      width: 17px;
+      height: 15px;
+
+      background-image: url("../../images/icons/social/reddit.svg");
+    }
+  }
+
+  .layout-container {
+    margin-right: 15px;
+    margin-bottom: 0;
+  }
+}

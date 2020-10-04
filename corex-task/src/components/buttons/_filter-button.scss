@@ -1,0 +1,17 @@
+@import "../../sass/variables";
+@import "../../sass/mixins";
+
+.filter-btn {
+  @include font-default;
+
+  position: relative;
+  width: 212px;
+  max-width: 212px;
+  height: 30px;
+  padding: 0 0 0 9px;
+
+  background-color: $transparent-white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

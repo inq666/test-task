@@ -1,0 +1,58 @@
+@import "../../sass/media-query";
+
+.header {
+  @include media-query("lg") {
+    padding-top: 27px;
+  }
+  @include media-query("md") {
+    padding: 60px 25px 0 30px;
+  }
+  @include media-query("sm") {
+    padding: 29px 13px 0 15px;
+  }
+
+  display: flex;
+  justify-content: space-between;
+  padding-top: 26px;
+
+  .header__container {
+    display: flex;
+  }
+
+  .header__logo {
+    @include media-query("md") {
+      width: 105.75px;
+      height: 31px;
+
+      background-image: url("../../images/icons/short-logo.svg");
+    }
+    @include media-query("sm") {
+      width: 64px;
+      height: 19px;
+    }
+
+    width: 132px;
+    height: 29px;
+
+    background-image: url("../../images/icons/logo.svg");
+    background-size: cover;
+  }
+
+  .filter-menu {
+    @include media-query("md") {
+      display: block;
+    }
+    @include media-query("sm") {
+      width: 21px;
+      height: 22px;
+    }
+
+    display: none;
+    width: 33px;
+    height: 34px;
+    margin-top: -1px;
+
+    background-image: url("../../images/icons/filter-menu.svg");
+    background-size: cover;
+  }
+}

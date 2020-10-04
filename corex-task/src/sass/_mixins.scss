@@ -1,0 +1,28 @@
+@import "./media-query";
+
+@mixin adaptive-font($pxSize, $minSize, $maxWidth) {
+  $addSize: $pxSize - $minSize;
+  $addMinSize: $addSize + $addSize * 0.7;
+  @media (max-width: 768px) {
+    font-size: calc(#{$minSize + px} + #{$addMinSize} * ((100vw - 425px) / #{$maxWidth}));
+  }
+  @media (min-width: 768px) {
+    font-size: calc(#{$minSize + px} + #{$addSize} * (100vw) / #{$maxWidth});
+  }
+}
+
+@mixin font-title {
+  margin-bottom: 14px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 48px;
+  font-family: "Exo", sans-serif;
+}
+
+@mixin font-default {
+  font-size: 12px;
+  font-weight: 300;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  color: $white;
+}

@@ -1,0 +1,38 @@
+@import "../../sass/variables";
+@import "../../sass/media-query";
+
+.change-language-btn {
+  @include media-query("md") {
+    display: none;
+  }
+
+  position: relative;
+
+  margin-left: 60px;
+  padding: 3px 0 0;
+
+  font-weight: 700;
+  font-size: 14px;
+  font-family: "Exo", sans-serif;
+  color: $white;
+
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: -35px;
+
+    width: 20px;
+    height: 20px;
+
+    background-image: url("../../images/icons/planet.svg");
+    
+    pointer-events:none;
+    cursor: default;
+  }
+}

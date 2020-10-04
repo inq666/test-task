@@ -1,0 +1,16 @@
+@import "../../sass/variables";
+@import "../../sass/media-query";
+@import "../../sass/mixins";
+
+.filter {
+  padding-left: 2px;
+  @include media-query("md") {
+    display: none;
+  }
+
+  display: flex;
+  flex-direction: column;
+  h2 {
+    @include font-title;
+  }
+}
