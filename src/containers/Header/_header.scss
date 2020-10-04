@@ -8,11 +8,9 @@
     padding: 60px 25px 0 30px;
   }
   @include media-query("sm") {
+    padding: 29px 13px 0 15px;
+  }
 
-    padding: 31px 14px 1px 15px;
-
-
-  display: flex;
   justify-content: space-between;
   padding-top: 26px;
 
